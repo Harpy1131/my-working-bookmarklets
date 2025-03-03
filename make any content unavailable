@@ -1,0 +1,1 @@
+javascript:(function(){var img='https://media.giphy.com/media/l3q2JCu9S6U7gBjaQ/giphy.gif';document.querySelectorAll('img').forEach(function(node){node.src=img;node.srcset=img;});})();
