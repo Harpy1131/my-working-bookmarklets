@@ -1,0 +1,44 @@
+ {  
+   "bookmarklets": [  
+     {  
+       "name": "Google Search",  
+       "code": "javascript:(function(){var q=prompt('Search Google:');if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(q));})();"  
+     },  
+     {  
+       "name": "Translate Page",  
+       "code": "javascript:(function(){window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href));})();"  
+     },  
+     {  
+       "name": "Dark Mode",  
+       "code": "javascript:(function(){var css='*{background:#000;color:#0f0}a{color:#0ff}';var style=document.createElement('style');style.type='text/css';style.appendChild(document.createTextNode(css));document.head.appendChild(style);})();"  
+     },  
+     {  
+       "name": "Bookmark All Tabs",  
+       "code": "javascript:(function(){var folderName=prompt('Enter folder name for bookmarks:');if(folderName){var links='';for(var i=0;i<window.frames.length;i++){links+=window.frames[i].location.href+'\\n';}alert('Bookmarks:\\n'+links);}})();"  
+     },  
+     {  
+       "name": "Remove All Images",  
+       "code": "javascript:(function(){var imgs=document.getElementsByTagName('img');for(var i=0;i<imgs.length;i++){imgs[i].style.display='none';}})();"  
+     },  
+     {  
+       "name": "Edit Page",  
+       "code": "javascript:document.body.contentEditable='true';document.designMode='on';void 0;"  
+     },  
+     {  
+       "name": "Clear Cookies",  
+       "code": "javascript:(function(){document.cookie.split(';').forEach(function(c){document.cookie=c.trim().split('=')[0]+'=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/';});alert('Cookies cleared!');})();"  
+     },  
+     {  
+       "name": "Scroll to Top",  
+       "code": "javascript:window.scrollTo(0,0);"  
+     },  
+     {  
+       "name": "Scroll to Bottom",  
+       "code": "javascript:window.scrollTo(0,document.body.scrollHeight);"  
+     },  
+     {  
+       "name": "Print Page",  
+       "code": "javascript:window.print();"  
+     }  
+   ]  
+ }  
